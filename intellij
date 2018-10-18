@@ -1,0 +1,14 @@
+Editor
+-General
+--Soft Wraps
+---Check “Use Soft Wraps in Editor”
+--Virtual Space
+---Uncheck all.
+-Other
+--Strip trailing spaces on exit - All
+--Uncheck “Always keep trailing spaces on caret line”
+--Check “Ensure line feed at end of file on save”
+-Smart Keys
+--Uncheck “Insert paired brackets (), [], <>”
+--Uncheck “Insert pair quote”
+--Check “Surround selection on typing quote or brace”

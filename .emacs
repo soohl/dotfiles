@@ -8,11 +8,14 @@
 (global-set-key (kbd "M-j") 'join-line)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "C-a") 'back-to-indentation)
+(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
 
+;;Theme Setting
 (add-to-list 'custom-theme-load-path "~/.emacs.d/Themes")
 (add-to-list 'load-path "~/.emacs.d/Themes")
 (require 'color-theme-tomorrow)
 (color-theme-tomorrow--define-theme night-eighties)
+(set-frame-font "Bitstream Vera Sans Mono 13" nil t)
 
 ;;Default Setting
 (set-face-attribute 'default nil :height 140)
@@ -29,13 +32,6 @@
 (delete-selection-mode 1)
 (setq visible-bell nil)
 (setq ring-bell-function 'ignore)
-
-(electric-pair-mode 1)
-
-(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
-
-(set-frame-font "Bitstream Vera Sans Mono 13" nil t)
-
 
 ;; UTF-8 everywhere
 (prefer-coding-system 'utf-8)
@@ -69,8 +65,9 @@
 (setq-default mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq-default scroll-step 1) ;; keyboard scroll one line at a time
 
-
+;;Backup and lockfiles creation
 (setq backup-directory-alist `(("." . "~/.saves")))
 (setq create-lockfiles nil)
 
-(global-set-key (kbd "C-<return>") 'set-mark-command)
+;;Autocomplete
+(electric-pair-mode 1)
