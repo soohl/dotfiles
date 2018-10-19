@@ -1,4 +1,21 @@
-;;Package installer
+;;Custom Var
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   (quote
+    ("84d2f9eeb3f82d619ca4bfffe5f157282f4779732f48a5ac1484d94d5ff5b279" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((((class color) (min-colors 89)) (:foreground "#cccccc" :background "#2d2d2d"))))
+ '(ivy-subdir ((t (:foreground "#00FF00")))))
+
+;;Package installer (melpa)
 (package-initialize)
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -8,13 +25,14 @@
 (global-set-key (kbd "M-j") 'join-line)
 (global-set-key (kbd "M-g") 'goto-line)
 (global-set-key (kbd "C-a") 'back-to-indentation)
-(global-set-key (kbd "<s-return>") 'toggle-frame-maximized)
+(global-set-key (kbd "<s-return>") 'toggle-frame-maximized) ;; To full screen
+(global-set-key (kbd "<C-return>") 'set-mark-command)
 
-;;Theme Setting
+;;Theme and font setting
 (add-to-list 'custom-theme-load-path "~/.emacs.d/Themes")
 (add-to-list 'load-path "~/.emacs.d/Themes")
-(require 'color-theme-tomorrow)
-(color-theme-tomorrow--define-theme night-eighties)
+(require 'color-theme-sanityinc-tomorrow)
+(color-theme-sanityinc-tomorrow--define-theme eighties)
 (set-frame-font "Bitstream Vera Sans Mono 13" nil t)
 
 ;;Default Setting
@@ -29,9 +47,11 @@
 (setq-default visual-line-fringe-indicators '(nil nil))
 (setq-default word-wrap t)
 (setq-default column-number-mode t)
+(setq default-fill-column 80)
 (delete-selection-mode 1)
-(setq visible-bell nil)
 (setq ring-bell-function 'ignore)
+(setq inhibit-startup-screen t )
+(setq initial-scratch-message "Welcome Back to Emacs~!")
 
 ;; UTF-8 everywhere
 (prefer-coding-system 'utf-8)
@@ -58,16 +78,22 @@
  (global-linum-mode 1)
 (setq linum-eager nil)
 
-
 ;;Smooth Scrolling
 (setq-default mouse-wheel-scroll-amount '(1 ((shift) . 1)))
-(setq-default mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
-(setq-default mouse-wheel-follow-mouse 't) ;; scroll window under mouse
-(setq-default scroll-step 1) ;; keyboard scroll one line at a time
+(setq-default mouse-wheel-progressive-speed nil)
+(setq-default mouse-wheel-follow-mouse 't)
+(setq-default scroll-step 1)
 
-;;Backup and lockfiles creation
-(setq backup-directory-alist `(("." . "~/.saves")))
+;;Turn off backup and lockfiles creation
+(setq backup-inhibited t)
+(setq make-backup-files nil)
+(setq auto-save-default nil)
 (setq create-lockfiles nil)
 
 ;;Autocomplete
 (electric-pair-mode 1)
+
+(ivy-mode 1)
+
+(setq sml/theme 'powerline)
+(sml/setup)
