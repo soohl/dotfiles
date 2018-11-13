@@ -22,7 +22,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 DEFAULT_USER=togaflex
 export PATH="/Users/togaflex/miniconda3/bin:$PATH"
 export PATH="~/bin:$PATH"
-alias ll='ls -la'
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -120,5 +120,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll="ls -a"
 
 
