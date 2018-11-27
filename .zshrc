@@ -1,4 +1,3 @@
-
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/togaflex/.oh-my-zsh"
 
@@ -12,8 +11,10 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 POWERLEVEL9K_TIME_BACKGROUND="black"
 POWERLEVEL9K_TIME_FOREGROUND="007"
 POWERLEVEL9K_TIME_FORMAT="%F{003}%D{%H:%M}"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=('time')
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time anaconda)
 POWERLEVEL9K_RIGHT_SEGMENT_SEPARATOR=$'\uE0B2'
+POWERLEVEL9K_ANACONDA_BACKGROUND='black'
+POWERLEVEL9K_ANACONDA_FOREGROUND="007"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -22,7 +23,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 DEFAULT_USER=togaflex
 export PATH="/Users/togaflex/miniconda3/bin:$PATH"
 export PATH="~/bin:$PATH"
-
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -121,5 +121,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -a"
-
-
+export PATH=$PATH:$HOME/bin

@@ -1,34 +1,49 @@
-"Default Settings
-set number "line num
-set ai "auto indent
-set si "smart indent
-set autowrite
-set autoread
-set ts=4 "Tab to 4 space
-set expandtab "Tab to space
-set ignorecase "Ignore case when search
-set hlsearch "highlight search word
+"File Setting
 set fileencodings=utf-8 "Always UTF-8
 set encoding=utf-8
 set tenc=utf-8 "Always UTF-8
+"Default setting
+syntax enable 
+set number "show line number
+set ts=4 "set tab as 4 space
+set textwidth=80 "set wrap 80
+set autoindent "indent when moving to the next line while coding
+set expandtab "extend tab into space
+set shiftwidth=4 " when using the >> or << commands, shift lines by 4 spaces
+set cursorline "show visual line under the cursor's current line 
+set showmatch "show the matching brackets
+set ignorecase "Ignore case when searching
+"set hlsearch "highlight search word
 set ruler "show cursor location
-set title "show title
-set showmatch "show mathching brackets
-set wmnu "show possible list when tab1
-set wrap
-set visualbell "show visual bell instead
-set scrolloff=2 "Show at least two lines below the cursor
-set incsearch "Incremental Search On
-syntax on "syntax highlight on
-set nobackup "no backup
-set laststatus=2 "Always show status bar
-set guioptions-=r  "remove right-hand scroll bar
+"set title "show title
+set visualbell "show visualbell instead
+set guioptions=-r "remove right-hand scroll bar
+set nobackup
+set clipboard=unnamed "Allow system paste
+
+set foldmethod=indent "Enable folding
+set foldlevel=99
+
+"autocmd VimEnter * NERDTree "open nerdtree automatically
+
+set splitbelow "Split below
+set splitright "Split right
+" Language Specific
+let python_highlight_all = 1
 
 " Remap HJKL
 noremap ; l
 noremap l k
 noremap k j
 noremap j h
+
+"Folding with space
+nnoremap <space> za
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Vim Plug - plugin manager
 call plug#begin()
@@ -38,6 +53,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jreybert/vimagit'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
+Plug 'scrooloose/nerdtree'
 call plug#end()
                        
 
@@ -49,8 +66,5 @@ if has('gui_running')
   set guifont=Roboto\ Mono\ for\ Powerline:h13
 endif
 
-syntax on
-colorscheme onedark
-let g:airline_theme='onedark'
-
-
+colorscheme monokai
+let g:airline_theme='molokai'
