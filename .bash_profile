@@ -1,7 +1,4 @@
-# Terminal modification, show directory
-export PS1='\n'
-export PS1+='\[\e[0;32m\][\u\[\e[0m\]:\[\e[0;32m\]\w]\[\e[0m\]\n$ '
-export CLICOLOR=1
+PS1="\[\e[32m\]koko\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\n\\$ "
 
 #ls to ls vertical documentation
 alias ls='ls -1'
