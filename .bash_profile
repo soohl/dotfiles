@@ -8,6 +8,3 @@ alias ll='ls -la'
 
 #Personal Bin path
 export PATH="~/bin:$PATH"
-
-# added by Miniconda3 installer
-export PATH="/Users/togaflex/miniconda3/bin:$PATH"
