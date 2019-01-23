@@ -1,6 +1,6 @@
 PERSONAL DOTFILES CONTAINER
 
-**SPECIFICATIONS**
+SPECIFICATIONS
 * Vim (~/.vimrc)
 * Emacs (~/.emacs.d/init.el)
 * Bash_profile (~/.bash_profile)
@@ -26,7 +26,7 @@ PERSONAL DOTFILES CONTAINER
 	"open_files_in_new_window": false
 	}
 
-**Environment**
+Environment
 * Shell
     - Iterm + bash 
 * Text Edit (Common) 
@@ -40,4 +40,6 @@ PERSONAL DOTFILES CONTAINER
     - Vim + terminal
     - Intellij ultimate
 * Keymap
-	
+
+Bin
+* Contain checkstyle, junit
