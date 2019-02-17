@@ -1,13 +1,63 @@
 PERSONAL DOTFILES CONTAINER
 
-SPECIFICATIONS
+//////// SPECIFICATIONS /////////
 * Vim (~/.vimrc)
 * Emacs (~/.emacs.d/init.el)
 * Bash_profile (~/.bash_profile)
 * Intellij settings
 * .zshrc
 * iTerm2 -> Ubuntu Preset.
-* Sublime - with Iopener
+* VSCode
+    ///////////////////// Global Settings for VSCode ////////////////////////////
+	{
+    "workbench.statusBar.feedback.visible": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontSize": 14,
+    "editor.wordWrap": "on",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "editor.fontFamily": "D2Coding, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": 0,
+    "editor.rulers": [
+        80
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": false
+	}
+
+    ///////////////////// Build Task file for C++ ////////////////////////////
+        {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cpp build",
+            "type": "shell",
+            "command": "g++ ${file} -o ./cpp/out/${fileBasenameNoExtension}  && ./cpp/out/${fileBasenameNoExtension}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceRoot}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
+
+* Sublime 3 with Iopener
 	{
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Hack",
@@ -26,20 +76,18 @@ SPECIFICATIONS
 	"open_files_in_new_window": false
 	}
 
-Environment
+////////// Environment ///////////
 * Shell
     - Iterm + bash 
-* Text Edit (Common) 
+* Text Edit
     - Vim + iterm2
-	- Submlime
+	- VSCode
 * Python
-    - Vim + terminal (small project) 
-    - PyCharm pro (big project)
+    - VSCode
     - Jupyter (visual)
+* C++ 
+	- VSCode	
 * Java 
-    - Vim + terminal
-    - Intellij ultimate
-* Keymap
-
-Bin
-* Contain checkstyle, junit
+    - Intellij
+* Bin
+    - Contain checkstyle, junit
