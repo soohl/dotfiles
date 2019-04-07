@@ -1,93 +1,14 @@
 PERSONAL DOTFILES CONTAINER
 
-//////// SPECIFICATIONS /////////
+EDITOR
 * Vim (~/.vimrc)
-* Emacs (~/.emacs.d/init.el)
-* Bash_profile (~/.bash_profile)
-* Intellij settings
-* .zshrc
-* iTerm2 -> Ubuntu Preset.
-* VSCode
-    ///////////////////// Global Settings for VSCode ////////////////////////////
-	{
-    "workbench.statusBar.feedback.visible": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.fontSize": 14,
-    "editor.wordWrap": "on",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "editor.fontFamily": "D2Coding, Monaco, 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "Hack",
-    "terminal.integrated.fontSize": 13,
-    "window.zoomLevel": 0,
-    "editor.rulers": [
-        80
-    ],
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.activityBar.visible": false
-	}
+* Emacs (~/.emacs.d/init.el) -> X
+* VSCode (settings.json)
+* Intellij settings (intellij)
 
-    ///////////////////// Build Task file for C++ ////////////////////////////
-        {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "cpp build",
-            "type": "shell",
-            "command": "g++ ${file} -o ./cpp/out/${fileBasenameNoExtension}  && ./cpp/out/${fileBasenameNoExtension}",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "cpp",
-                "fileLocation": ["relative", "${workspaceRoot}"],
-                "pattern": {
-                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
-                }
-            }
-        }
-    ]
-}
+ENVIRONMENT
+* Zsh (.zshrc) -> X
+* PATH (~/.bash_profile)
 
-* Sublime 3 with Iopener
-	{
-	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Hack",
-	"font_size": 14,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
-	"rulers":
-	[
-		80
-	],
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"open_files_in_new_window": false
-	}
-
-////////// Environment ///////////
-* Shell
-    - Iterm + bash 
-* Text Edit
-    - Vim + iterm2
-	- VSCode
-* Python
-    - VSCode
-    - Jupyter (visual)
-* C++ 
-	- VSCode	
-* Java 
-    - Intellij
-* Bin
-    - Contain checkstyle, junit
+BIN
+* Checkstyle

@@ -1,4 +1,5 @@
-PS1="\[\e[32m\]koko\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\n\\$ "
+#PS1 Customization 
+PS1="\[\e[32m\]coco\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\n\\$ "
 
 #ls to ls vertical documentation
 alias ls='ls -1'
@@ -6,10 +7,12 @@ alias ls='ls -1'
 #Alias to show hidden files
 alias ll='ls -la'
 
-#Personal Bin path
+#Personal bin path
 export PATH="~/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 
+# Go PATH
+export PATH=${HOME}/go/bin:$PATH
 
 # added by Miniconda3 4.5.12 installer
 # >>> conda init >>>
@@ -26,4 +29,4 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda init <<<
+# <<< con:wqda init <<<

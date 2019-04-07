@@ -1,0 +1,25 @@
+/*
+* VS code settings 
+*/
+
+{
+    // Hide Rating Bar
+    "workbench.statusBar.feedback.visible": false,
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    
+    "editor.fontFamily": "Hack, Monaco, 'Courier New', monospace",
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": 0,
+    "editor.rulers": [
+        80
+    ],
+    "workbench.activityBar.visible": true,
+    "files.eol": "\n",
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.sideBar.location": "left",
+    "extensions.ignoreRecommendations": false
+}
