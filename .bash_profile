@@ -1,13 +1,17 @@
-#PS1 Customization 
-PS1="\[\e[32m\]coco\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\]\n\\$ "
+#PS1 Customization
+export PS1="\[\e[32m\]coco\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\] \\$ "
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export EDITOR='vim'
 
 #ls to ls vertical documentation
-alias ls='ls -1'
+#alias ls='ls -1'
 
 #Alias to show hidden files
 alias ll='ls -la'
 
-#Personal bin path
+#Personal Bin path
 export PATH="~/bin:$PATH"
 export PATH=/usr/local/bin:$PATH
 
