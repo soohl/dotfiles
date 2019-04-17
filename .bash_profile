@@ -1,6 +1,7 @@
 #PS1 Customization
 export PS1="\[\e[32m\]coco\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\] \\$ "
 
+# Color Settings
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export EDITOR='vim'
@@ -17,6 +18,9 @@ export PATH=/usr/local/bin:$PATH
 
 # Go PATH
 export PATH=${HOME}/go/bin:$PATH
+
+# Alias
+alias chrome="open -a 'Google Chrome'"
 
 # added by Miniconda3 4.5.12 installer
 # >>> conda init >>>

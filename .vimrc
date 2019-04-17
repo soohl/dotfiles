@@ -13,7 +13,10 @@ set encoding=utf-8
 set fileencoding=utf-8
 set t_Co=256
 set virtualedit=onemore
-highlight Comment ctermfg=green
+
+highlight Comment ctermfg=Darkgreen
+highlight Constant ctermfg=red
+
 set vb
 set t_vb=
 
