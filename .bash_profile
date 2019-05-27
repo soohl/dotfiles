@@ -1,5 +1,5 @@
 #PS1 Customization
-export PS1="\[\e[32m\]coco\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\] \\$ "
+export PS1="\[\e[32m\]lucas\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\s\[\e[m\]\[\e[37m\]:\[\e[m\]\[\e[34m\]\w\[\e[m\] \\$ "
 
 # Color Settings
 export CLICOLOR=1
