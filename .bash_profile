@@ -21,8 +21,8 @@ export PATH=${HOME}/go/bin:$PATH
 
 # Alias
 alias chrome="open -a 'Google Chrome'"
-alias jl = "jupyter lab"
-alias jn = "jupyter notebook"
+alias jl="jupyter lab"
+alias jn="jupyter notebook"
 
 # added by Miniconda3 4.5.12 installer
 # >>> conda init >>>
