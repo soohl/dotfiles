@@ -1,0 +1,10 @@
+# Environment Variable / Cache
+.env
+.cache
+
+# Node Related
+.npm
+node_modules/
+
+# Distribution Files
+dist

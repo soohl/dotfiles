@@ -1,0 +1,4 @@
+﻿# static type checker
+mypy
+# pep8 checker
+pycodestyle
