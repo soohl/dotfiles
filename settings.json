@@ -21,23 +21,20 @@
 /* VS code settings */
 
 {
-    // Hide Rating Bar
-    "workbench.statusBar.feedback.visible": false,
-    "editor.fontSize": 13,
-    "editor.wordWrap": "on",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "editor.fontFamily": "'Monaco', 'Courier New', monospace",
-    "terminal.integrated.fontFamily": "Hack",
-    "terminal.integrated.fontSize": 14,
-    "window.zoomLevel": 0,
-    "editor.rulers": [
-        80
+    "editor.fontFamily": "Source Code Pro, monospace",
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
     ],
-    "workbench.activityBar.visible": true,
-    "files.eol": "\n",
-    "workbench.sideBar.location": "left",
-    "extensions.ignoreRecommendations": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Gruvbox Light Soft"
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
