@@ -22,7 +22,7 @@
 
 {
     "editor.fontFamily": "Source Code Pro, monospace",
-    "workbench.colorTheme": "GitHub Dark",
+    "workbench.colorTheme": "GitHub Light Default",
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
@@ -37,4 +37,5 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "python.formatting.provider": "black"
 }

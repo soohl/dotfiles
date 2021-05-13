@@ -1,7 +1,6 @@
 ﻿# static type checker
 mypy
 # pep8 checker
-autopep8
-pycodestyle
+black
 
 
